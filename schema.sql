@@ -5,7 +5,7 @@ CREATE TABLE 'client' (
   'id' INTEGER PRIMARY KEY AUTOINCREMENT,
   'name' TEXT NOT NULL,
   'phone' TEXT NOT NULL,
-  'email' TEXT NOT NULL,
+  'email' TEXT NOT NULL
 );
 
 CREATE TABLE 'appointment' (
@@ -16,4 +16,3 @@ CREATE TABLE 'appointment' (
   'notes' TEXT NOT NULL,
   FOREIGN KEY('client_id') REFERENCES 'client'('id')
 );
-```
